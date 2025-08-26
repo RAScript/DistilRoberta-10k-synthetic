@@ -12,7 +12,7 @@ model = AutoModelForSequenceClassification.from_pretrained(model_path)
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 model.to(device)
 
-# Example prediction
+# Example prediction -- Modify this to test your own code sample.
 example_code = """
 #include <string.h>
 #include <stdio.h>
@@ -35,3 +35,4 @@ with torch.no_grad():
 
 print("🔎 Prediction:", label)
 print("📊 Probabilities:", probs.cpu())
+
